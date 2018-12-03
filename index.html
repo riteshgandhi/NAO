@@ -8,6 +8,7 @@
         crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/NAO.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
@@ -46,9 +47,8 @@
             <tr>
                 <td rowspan="2" style="width:20%; border-right: solid; border-color: lightgray">
                     <!-- Brand -->
-                    <a class="navbar-brand" href="index.html"> 
-                        <img id="logo" alt="Logo" src="images/logo.jpg" width="180"
-                            height="65">
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo" alt="Logo" src="images/logo.jpg" width="180" height="65">
                     </a>
                 </td>
             </tr>
@@ -83,7 +83,9 @@
                                             info@araborchestra.com
                                         </td>
                                         <td style="padding-right: 10px">
-                                            <button type="button" class="btn btn-primary">Donate</button>
+                                            <a href="src/NAO_Memberships.html">
+                                                <button type="button" class="btn btn-primary">Donate</button>
+                                            </a>
                                         </td>
                                     </tr>
                                 </table>
@@ -105,8 +107,16 @@
                                                     <li class="nav-item" style="padding-right: 15px">
                                                         <a class="nav-link" href="#">EDUCATION</a>
                                                     </li>
-                                                    <li class="nav-item" style="padding-right: 15px">
-                                                        <a class="nav-link" href="#">SUPPORT</a>
+                                                    <li class="nav-item dropdown" style="padding-right: 15px">
+                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            SUPPORT
+                                                        </a>                                                        
+                                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <a class="dropdown-item" href="src/NAO_Memberships.html">Membership & Donor
+                                                                Resources</a>
+                                                            <a class="dropdown-item" href="#">Volunteer</a>
+                                                            <a class="dropdown-item" href="#">Corporate & Foundation Partners</a>
+                                                        </div>
                                                     </li>
                                                     <li class="nav-item" style="padding-right: 15px">
                                                         <a class="nav-link" href="src/NAO_Aboutus.html">ABOUT US</a>
@@ -156,7 +166,7 @@
                     <img src="images/Banner_Support.jpg" alt="Support NAO" style="width:100%; height: 400px;">
                 </div>
             </div>
-                
+
             <!-- Left and right controls -->
             <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -170,12 +180,18 @@
                     <td style="width:80%">
                         <article>
                             <h3>Season 2018-2019</h3>
-                            <p>Feel the <b><font color="maroon">Music</font></b>.</p>
-                            <p><b><font color="maroon">Up Close</font></b> and Personal.</p>
+                            <p>Feel the <b>
+                                    <font color="maroon">Music</font>
+                                </b>.</p>
+                            <p><b>
+                                    <font color="maroon">Up Close</font>
+                                </b> and Personal.</p>
                         </article>
                         <article>
                             <p>Conducted by Music Director Michael Ibrahim</p>
-                            <p>Through creative programming and inspiring artistry of the National Arab Orchestra and Maestro Michael Ibrahim, the beauty and thrills of live music will challenge your senses.</p>
+                            <p>Through creative programming and inspiring artistry of the National Arab Orchestra and
+                                Maestro Michael Ibrahim, the beauty and thrills of live music will challenge your
+                                senses.</p>
                         </article>
                         <table>
                             <tr>
