@@ -39,12 +39,15 @@
 </head>
 
 <body>
+
+    <!-- Top Menu -->
     <nav class="navbar navbar-expand-md bg-white navbar-light">
         <table style="width: 100%">
             <tr>
                 <td rowspan="2" style="width:20%; border-right: solid; border-color: lightgray">
                     <!-- Brand -->
-                    <a class="navbar-brand" href="#"> <img id="logo" alt="Logo" src="images/logo.jpg" width="180"
+                    <a class="navbar-brand" href="index.html"> 
+                        <img id="logo" alt="Logo" src="images/logo.jpg" width="180"
                             height="65">
                     </a>
                 </td>
@@ -57,13 +60,19 @@
                                 <table style="float:right">
                                     <tr>
                                         <td style="padding-right: 10px">
-                                            <i style="padding-left: 10px; color: gray" class="fab fa-facebook-f"></i>
+                                            <a href="https://www.facebook.com/NationalArabOrchestra/" target="_blank">
+                                                <i style="padding-left: 10px; color: gray" class="fab fa-facebook-f"></i>
+                                            </a>
                                         </td>
                                         <td style="padding-right: 10px">
-                                            <i style="padding-left: 10px; color: gray" class="fab fa-twitter"></i>
+                                            <a href="https://twitter.com/araborchestra" target="_blank">
+                                                <i style="padding-left: 10px; color: gray" class="fab fa-twitter"></i>
+                                            </a>
                                         </td>
                                         <td style="padding-right: 20px; border-right: solid;border-color: lightgray">
-                                            <i style="padding-left: 10px; color: gray" class="fab fa-youtube"></i>
+                                            <a href="https://www.youtube.com/channel/UCW0q_FZnJxmNTVoD7inGh4A" target="_blank">
+                                                <i style="padding-left: 10px; color: gray" class="fab fa-youtube"></i>
+                                            </a>
                                         </td>
                                         <td style="padding-right: 10px">
                                             <i style="padding-left: 10px; color: gray" class="fas fa-phone"></i>
@@ -100,7 +109,7 @@
                                                         <a class="nav-link" href="#">SUPPORT</a>
                                                     </li>
                                                     <li class="nav-item" style="padding-right: 15px">
-                                                        <a class="nav-link" href="#">ABOUT US</a>
+                                                        <a class="nav-link" href="src/NAO_Aboutus.html">ABOUT US</a>
                                                     </li>
                                                     <li>
                                                         <button class="btn btn-outline-secondary" type="button" style="border:none">
@@ -121,21 +130,30 @@
         </table>
     </nav>
 
+    <!-- Carousel -->
     <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/image1.jpg" alt="NAO Team" style="width:100%; height: 400px;">
+                    <img src="images/Banner_AboutUs.jpg" alt="NAO Team" style="width:100%; height: 400px;">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/image2.png" alt="Support NAO" style="width:100%; height: 400px;">
+                    <img src="images/Banner_Education.jpg" alt="Support NAO" style="width:100%; height: 400px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Banner_Concert+Tickets.jpg" alt="NAO Team" style="width:100%; height: 400px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Banner_Support.jpg" alt="Support NAO" style="width:100%; height: 400px;">
                 </div>
             </div>
                 
