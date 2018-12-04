@@ -13,16 +13,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    
-        <!------ payment form ---------->
+
+    <!------ payment form ---------->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-
-    
     <style>
-    
+
         #logo {
             vertical-align: middle;
         }
@@ -46,6 +44,19 @@
             margin-left: auto;
         }
     </style>
+    <script>
+            $(document).ready(function () {
+                $('a.level').click(function () {
+                    $('button.levelrange').css( "border", "" );
+                    var startId = '#' + $(this).data("start");
+                    var endId = '#' + $(this).data("end");
+                    $(startId).css( "border", "3px solid red" ); 
+                    $(endId).css( "border", "3px solid red" ); 
+                    $("#selectedLevel").text($(this).text());
+                    return false;
+                });
+            });    
+    </script>
 </head>
 
 <body>
@@ -167,22 +178,22 @@
         </table>
     </nav>
 
-    <div class="container">
+    <div class="container" style="width:1200px">
         <img src="../images/Header.jpg" alt="NAO membership header" style="width:100%; height: 250px;">
 
         <div class="vertical-menu">
             <a href="#" class="active"><b>Membership & Donor Resources</b></a>
-            <a href="#"><b>Subscriber </b></a>
-            <a href="#"><b>Supporter</b></a>
-            <a href="#"><b>Friend </b></a>
-            <a href="#"><b>Oud Chair </b></a>
-            <a href="#"><b>Qanum Chair </b></a>
-            <a href="#"><b>Principal Players</b></a>
-            <a href="#"><b>Concert Master </b></a>
-            <a href="#"><b>Maestro's Podium </b></a>
-            <a href="#"><b>Executive Chair </b></a>
-            <a href="#"><b>Chairman's Circle </b></a>
-            <a href="#"><b>Founders Society </b></a>
+            <a href="#" class="level" data-start="btn1" data-end="btn2"><b>Subscriber </b></a>
+            <a href="#" class="level" data-start="btn2" data-end="btn3"><b>Supporter</b></a>
+            <a href="#" class="level" data-start="btn3" data-end="btn4"><b>Friend </b></a>
+            <a href="#" class="level" data-start="btn4" data-end="btn5"><b>Oud Chair </b></a>
+            <a href="#" class="level" data-start="btn5" data-end="btn6"><b>Qanum Chair </b></a>
+            <a href="#" class="level" data-start="btn6" data-end="btn7"><b>Principal Players</b></a>
+            <a href="#" class="level" data-start="btn8" data-end="btn9"><b>Concert Master </b></a>
+            <a href="#" class="level" data-start="btn9" data-end="btn10"><b>Maestro's Podium </b></a>
+            <!-- <a href="#" class="level" data-start="btn10" data-end="btn11"><b>Executive Chair </b></a>
+            <a href="#" class="level" data-start="btn11" data-end="btn12"><b>Chairman's Circle </b></a>
+            <a href="#" class="level" data-start="btn12" data-end="btn13" ><b>Founders Society </b></a> -->
         </div>
 
         <div class="container ">
@@ -190,105 +201,107 @@
             <img src="../images/NAOperforming.jpg" alt="NAO Team" style="width:70%; height: 300px;">
 
             <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">$50</button>
-                <button type="button" class="btn btn-secondary">$125</button>
-                <button type="button" class="btn btn-secondary">$275</button>
-                <button type="button" class="btn btn-secondary">$525</button>
-                <button type="button" class="btn btn-secondary">$775</button>
-                <button type="button" class="btn btn-secondary">$1,000</button>
-                <button type="button" class="btn btn-secondary">$1,500</button>
-                <button type="button" class="btn btn-secondary">$2,500</button>
-                <button type="button" class="btn btn-secondary">$5,000</button>
-                <button type="button" class="btn btn-secondary">$10,000</button>
+                <button type="button" class="btn btn-secondary levelrange" disabled id="btn1">$50</button>
+                <button type="button" class="btn btn-secondary levelrange" disabled id="btn2">$125</button>
+                <button type="button" class="btn btn-secondary levelrange" disabled id="btn3">$275</button>
+                <button type="button" class="btn btn-secondary levelrange" disabled id="btn4">$525</button>
+                <button type="button" class="btn btn-secondary levelrange" disabled id="btn5">$775</button>
+                <button type="button" class="btn btn-secondary levelrange" disabled id="btn6">$1,000</button>
+                <button type="button" class="btn btn-secondary levelrange" disabled id="btn7">$1,500</button>
+                <button type="button" class="btn btn-secondary levelrange" disabled id="btn8">$2,500</button>
+                <button type="button" class="btn btn-secondary levelrange" disabled id="btn9">$5,000</button>
+                <button type="button" class="btn btn-secondary levelrange" disabled id="btn10">$10,000</button>
+                <!-- <button type="button" class="btn btn-secondary levelrange" disabled id="btn11">$15,000</button>
+                <button type="button" class="btn btn-secondary levelrange" disabled id="btn12">$20,000</button>
+                <button type="button" class="btn btn-secondary levelrange" disabled id="btn13">$25,000</button> -->
             </div>
         </div>
 
-        <p> --- Levels should appear hear when clicked on side menu --- </p>
-
-
+        <label id="selectedLevel"></label>
+        <br>
+        <!-- <p> --- Levels should appear hear when clicked on side menu --- </p> -->
         <button type="button" class="btn">Select this level</button>
     </div>
 
-            <div class="col-md-6 offset-md-3">
-                    <span class="anchor" id="formPayment"></span>
-                    <hr class="my-5">
+    <div class="col-md-6 offset-md-3">
+        <span class="anchor" id="formPayment"></span>
+        <hr class="my-5">
 
-                    <!-- form card cc payment -->
-                    <div class="card card-outline-secondary">
-                        <div class="card-body">
-                            <h3 class="text-center">Credit Card Payment</h3>
-                            <hr>
-                            <div class="alert alert-info p-2 pb-3">
-                                <a class="close font-weight-normal initialism" data-dismiss="alert" href="#"><samp>×</samp></a> 
-                                CVC code is required.
-                            </div>
-                            <form class="form" role="form" autocomplete="off">
-                                <div class="form-group">
-                                    <label for="cc_name">Card Holder's Name</label>
-                                    <input type="text" class="form-control" id="cc_name" pattern="\w+ \w+.*" title="First and last name" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <label>Card Number</label>
-                                    <input type="text" class="form-control" autocomplete="off" maxlength="20" pattern="\d{16}" title="Credit card number" required="">
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-12">Card Exp. Date</label>
-                                    <div class="col-md-4">
-                                        <select class="form-control" name="cc_exp_mo" size="0">
-                                            <option value="01">01</option>
-                                            <option value="02">02</option>
-                                            <option value="03">03</option>
-                                            <option value="04">04</option>
-                                            <option value="05">05</option>
-                                            <option value="06">06</option>
-                                            <option value="07">07</option>
-                                            <option value="08">08</option>
-                                            <option value="09">09</option>
-                                            <option value="10">10</option>
-                                            <option value="11">11</option>
-                                            <option value="12">12</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <select class="form-control" name="cc_exp_yr" size="0">
-                                            <option>2018</option>
-                                            <option>2019</option>
-                                            <option>2020</option>
-                                            <option>2021</option>
-                                            <option>2022</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="text" class="form-control" autocomplete="off" maxlength="3" pattern="\d{3}" title="Three digits at back of your card" required="" placeholder="CVC">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="col-md-12">Amount</label>
-                                </div>
-                                <div class="form-inline">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text">$</span></div>
-                                        <input type="text" class="form-control text-right" id="exampleInputAmount" placeholder="">
-                                        <div class="input-group-append"><span class="input-group-text">.00</span></div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="form-group row">
-                                    <div class="col-md-6">
-                                        <button type="reset" class="btn btn-default btn-lg btn-block">Cancel</button>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
+        <!-- form card cc payment -->
+        <div class="card card-outline-secondary">
+            <div class="card-body">
+                <h3 class="text-center">Credit Card Payment</h3>
+                <hr>
+                <div class="alert alert-info p-2 pb-3">
+                    <a class="close font-weight-normal initialism" data-dismiss="alert" href="#"><samp>×</samp></a>
+                    CVC code is required.
+                </div>
+                <form class="form" role="form" autocomplete="off">
+                    <div class="form-group">
+                        <label for="cc_name">Card Holder's Name</label>
+                        <input type="text" class="form-control" id="cc_name" pattern="\w+ \w+.*" title="First and last name"
+                            required="required">
+                    </div>
+                    <div class="form-group">
+                        <label>Card Number</label>
+                        <input type="text" class="form-control" autocomplete="off" maxlength="20" pattern="\d{16}"
+                            title="Credit card number" required="">
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-12">Card Exp. Date</label>
+                        <div class="col-md-4">
+                            <select class="form-control" name="cc_exp_mo" size="0">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-control" name="cc_exp_yr" size="0">
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" autocomplete="off" maxlength="3" pattern="\d{3}"
+                                title="Three digits at back of your card" required="" placeholder="CVC">
                         </div>
                     </div>
-                    <!-- /form card cc payment -->
-
-
-    
-    
-    </body>
+                    <div class="row">
+                        <label class="col-md-12">Amount</label>
+                    </div>
+                    <div class="form-inline">
+                        <div class="input-group">
+                            <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+                            <input type="text" class="form-control text-right" id="exampleInputAmount" placeholder="">
+                            <div class="input-group-append"><span class="input-group-text">.00</span></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-group row">
+                        <div class="col-md-6">
+                            <button type="reset" class="btn btn-default btn-lg btn-block">Cancel</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /form card cc payment -->
+</body>
 
 </html>
