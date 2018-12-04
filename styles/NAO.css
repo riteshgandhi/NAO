@@ -1,4 +1,8 @@
 <style>
+        .mainMenu {
+            padding-right: 15px; 
+            padding-top: 15px;            
+        }
         #logo {
             vertical-align: middle;
         }
