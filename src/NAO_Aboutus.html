@@ -15,28 +15,36 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <style>
         #logo {
-            vertical-align: middle;
-        }
+                vertical-align: middle;
+            }
+            .navbar-brand span {
+                font-size: 2rem;
+                line-height: 1.2;
+                font-weight: 200;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0 0 0 15px;
+            }
+            .navbar-brand b {
+                display: block;
+                font-size: 50%;
+                line-height: 1;
+            }
+            .navbar-nav {
+                margin-left: auto;
+            }
+            
+            .video {
+            float: left;
+            padding-right: 3px; 
+            
+            }
+            
+            .p {
+            padding: 3px;    
+            }
+        </style>
 
-        .navbar-brand span {
-            font-size: 2rem;
-            line-height: 1.2;
-            font-weight: 200;
-            display: inline-block;
-            vertical-align: middle;
-            padding: 0 0 0 15px;
-        }
-
-        .navbar-brand b {
-            display: block;
-            font-size: 50%;
-            line-height: 1;
-        }
-
-        .navbar-nav {
-            margin-left: auto;
-        }
-    </style>
 </head>
 
 <body>
@@ -99,7 +107,7 @@
                                             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                                                 <ul class="navbar-nav">
                                                     <li class="nav-item" style="padding-right: 15px">
-                                                        <a class="nav-link" href="#">CONCERTS & TICKETS</a>
+                                                        <a class="nav-link" href="NAO_Concerts.html">CONCERTS & TICKETS</a>
                                                     </li>
                                                     <li class="nav-item" style="padding-right: 15px">
                                                         <a class="nav-link" href="NAO_PlanVisit.html">PLAN YOUR VISIT</a>
@@ -154,7 +162,15 @@
                             <h3><u>Our First Performance</u></h3>
                         </a>
                     </article>
-                    <p>The National Arab Orchestra (hereinafter “NAO”) began in 2009 as a
+
+                    <div class="video">
+                        <iframe width="500" height="315" src="https://www.youtube.com/embed/_THfBUB5VEo" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <p> The National Arab Orchestra (hereinafter “NAO”) began in 2009 as a
                         student ensemble at the University of Michigan under the direction
                         of Michael Ibrahim.&nbsp;&nbsp;Following the first concert, the
                         ensemble doubled in size to become an orchestra and began
@@ -197,8 +213,9 @@
                         an entirely different audience.&nbsp;&nbsp;The NAO continues its
                         mission to preserve and integrate Arab culture by creating
                         memorable musical experiences through education and performance
-                        with an emphasis on the musical traditions of the Arab world.</p>
-                </div>
+                        with an emphasis on the musical traditions of the Arab world.
+                    </p>
+
             </article> <!-- .et_pb_post -->
         </div> <!-- #main-content -->
     </div>
