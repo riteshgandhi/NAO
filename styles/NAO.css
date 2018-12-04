@@ -110,4 +110,15 @@
         .btn-group a.active {
         background-color: #611E20
         }
+
+        .image-and-text{
+            clear:both;
+        }
+        .image{
+            float:left;
+        }
+        .text{
+            float:left;
+        }
+        
 </style>
