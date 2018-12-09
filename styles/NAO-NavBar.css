@@ -1,0 +1,22 @@
+#logo {
+    vertical-align: middle;
+}
+
+.navbar-brand span {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 200;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 15px;
+}
+
+.navbar-brand b {
+    display: block;
+    font-size: 50%;
+    line-height: 1;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}

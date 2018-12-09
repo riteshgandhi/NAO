@@ -1,0 +1,56 @@
+footer { 
+    display: block;
+    background: #000000;
+    padding: 15px;
+    color: #FFFFFF;
+    
+}
+
+.button-footer {
+    background: #D4A958;
+    border: 2px solid #D4A958;
+    border-radius: 5px;
+    color: #ffffff;
+    
+}
+
+/* footer styles*/
+.footcolumn {
+    float: left;
+    width: 24%;
+    padding: 10px;
+    margin: 1px
+    
+}
+
+.footcolumn-y {
+    float: left;
+    width: 24%;
+    padding: 10px;
+    border-color: #ffffff;
+    border: 1px
+    
+}
+
+.footcolumn-x {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    
+}
+
+.footcolumn p {
+    font-size: 11px;
+}
+
+.footcolumn-x p {
+    font-size: 11px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ /* footer styles*/
