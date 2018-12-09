@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/NAO.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+     <!-- footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- footer -->
+    
+    
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    
+    <style>
+        #logo {
+            vertical-align: middle;
+        }
+
+        .navbar-brand span {
+            font-size: 2rem;
+            line-height: 1.2;
+            font-weight: 200;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 0 0 15px;
+        }
+
+        .navbar-brand b {
+            display: block;
+            font-size: 50%;
+            line-height: 1;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+        
+                footer { 
+            display: block;
+            background: #000000;
+            padding: 15px;
+            color: #FFFFFF;
+            
+        }
+        
+        .button-footer {
+            background: #D4A958;
+            border: 2px solid #D4A958;
+            border-radius: 5px;
+            color: #ffffff;
+            
+        }
+        
+        /* footer styles*/
+        .footcolumn {
+            float: left;
+            width: 24%;
+            padding: 10px;
+            margin: 1px
+            
+        }
+        
+        .footcolumn-y {
+            float: left;
+            width: 24%;
+            padding: 10px;
+            border-color: #ffffff;
+            border: 1px
+            
+        }
+
+        .footcolumn-x {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            
+        }
+        
+        .footcolumn p {
+            font-size: 11px;
+        }
+        
+        .footcolumn-x p {
+            font-size: 11px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+         /* footer styles*/
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Menu -->
+    <nav class="navbar navbar-expand-md bg-white navbar-light">
+        <table style="width: 100%">
+            <tr>
+                <td rowspan="2" style="width:20%; border-right: solid; border-color: lightgray">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="../index.html">
+                        <img id="logo" alt="Logo" src="../images/logo.jpg" width="180" height="65">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:80%">
+                    <table style="width:100%">
+                        <tr>
+                            <td style="border-bottom: solid; border-color: lightgray">
+                                <table style="float:right">
+                                    <tr>
+                                        <td style="padding-right: 10px">
+                                            <a href="https://www.facebook.com/NationalArabOrchestra/" target="_blank">
+                                                <i style="padding-left: 10px; color: gray" class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </td>
+                                        <td style="padding-right: 10px">
+                                            <a href="https://twitter.com/araborchestra" target="_blank">
+                                                <i style="padding-left: 10px; color: gray" class="fab fa-twitter"></i>
+                                            </a>
+                                        </td>
+                                        <td style="padding-right: 20px; border-right: solid;border-color: lightgray">
+                                            <a href="https://www.youtube.com/channel/UCW0q_FZnJxmNTVoD7inGh4A" target="_blank">
+                                                <i style="padding-left: 10px; color: gray" class="fab fa-youtube"></i>
+                                            </a>
+                                        </td>
+                                        <td style="padding-right: 10px">
+                                            <i style="padding-left: 10px; color: gray" class="fas fa-phone"></i>
+                                            248-123-1234
+                                        </td>
+                                        <td style="padding-right: 10px">
+                                            <i style="padding-left: 10px; color: gray" class="fas fa-envelope"></i>
+                                            info@araborchestra.com
+                                        </td>
+                                        <td style="padding-right: 10px">
+                                            <a href="NAO_Memberships.html">
+                                                <button type="button" class="btn btn-primary">Donate</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table style="float: left">
+                                    <tr>
+                                        <td>
+                                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                                <ul class="navbar-nav">
+                                                    <li class="nav-item active" style="padding-right: 15px; padding-top: 5px">
+                                                        <a class="nav-link" href="NAO_Concerts.html">CONCERTS & TICKETS</a>
+                                                    </li>
+                                                    <li class="nav-item" style="padding-right: 15px; padding-top: 5px">
+                                                        <a class="nav-link" href="NAO_PlanVisit.html">PLAN YOUR VISIT</a>
+                                                    </li>
+                                                    <li class="nav-item" style="padding-right: 15px; padding-top: 5px">
+                                                        <a class="nav-link" href="NAO_Education.html">EDUCATION</a>
+                                                    </li>
+                                                    <li class="nav-item dropdown" style="padding-right: 15px; padding-top: 5px">
+                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                            SUPPORT
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <a class="dropdown-item" href="NAO_Memberships.html">Membership
+                                                                & Donor
+                                                                Resources</a>
+                                                            <a class="dropdown-item" href="#">Volunteer</a>
+                                                            <a class="dropdown-item" href="#">Corporate & Foundation
+                                                                Partners</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="nav-item" style="padding-right: 15px; padding-top: 5px">
+                                                        <a class="nav-link" href="NAO_Aboutus.html">ABOUT US</a>
+                                                    </li>
+                                                    <li>
+                                                        <div>
+                                                            <script>
+                                                                (function () {
+                                                                    var cx = '009306133951131515060:3n44ifw4hyu';
+                                                                    var gcse = document.createElement('script');
+                                                                    gcse.type = 'text/javascript';
+                                                                    gcse.async = true;
+                                                                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                                                    var s = document.getElementsByTagName('script')[0];
+                                                                    s.parentNode.insertBefore(gcse, s);
+                                                                })();
+                                                            </script>
+                                                            <gcse:search></gcse:search>
+                                                        </div>
+                                                        <!-- <button class="btn btn-outline-secondary" type="button" style="border:none">   --->
+                                                        
+                                                        
+                                                        
+                                                        
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                <td>
+            </tr>
+        </table>
+    </nav>
+
+    <div class="container">
+        <h1>Calendar</h1>
+        
+        <div data-tockify-component="calendar" data-tockify-calendar="naocalender"></div>
+        <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+        
+
+    </div>
+</body>
+    
+    
+<footer>
+    
+  <p></p>
+  
+<div class ="container">
+<div class="row">
+    
+    <div class="footcolumn">
+            <h5>National Arab Orchestra</h5>
+            <p>123 Mound Road<br />
+            Warren, MI 48310</p>
+
+            <a href="https://goo.gl/maps/vuaKJePcA5y">
+            <button type="button-footer" class="button-footer"> ☆ Google Directions</button> 
+        <br /> <br />
+        <div class ="container">  
+            <a href="https://www.facebook.com/NationalArabOrchestra/" class="fab fa-facebook"></a>
+            <a href="https://twitter.com/araborchestra" class="fa fa-twitter"></a>  
+            <a href="https://www.instagram.com/araborchestra/" class="fa fa-instagram"></a>
+        </div>
+    
+    </div>
+      
+      <div class="footcolumn" style ="border: 1px; border-style:solid; border-color: #FFFFFF; ">
+            <h5>Box Office</h5>
+            <p>313.576.5111 <br />
+            <br />
+            Hours: Monday - Friday, 9am - 5pm <br />
+            Plus 2 hours prior to concerts * <br />
+            <br />
+            Dates, times, prices, programs, <br />
+            and artists are subject to change.
+          </p>
+      </div>
+
+      <div class="footcolumn-x">
+          <div class= "container">
+        
+            <p> Support the NAO with an Annual Fund gift today.</p>
+            
+                   &emsp; <h5 style="display: inline-block">NAO xSignup</h5> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <h5 style="display: inline-block">Donate to the NAO</h5>
+                
+            <div class= "container">
+                <div class="input-group mb-3">
+                    
+                    <input type="text" class="form-control" placeholder="Your Email">
+                    <div class="input-group-append">
+                    <button class="button-footer" type="button"><i class="far fa-envelope"></i></button>    
+
+                    <pre> </pre> <pre> </pre> <pre> </pre> <pre> </pre> 
+                    
+                    <input type="text" class="form-control" placeholder="$125.00">
+                    <div class="input-group-append">
+                    <button class="button-footer" type="button"><i class="fas fa-heart"></i></button>
+                    </div>
+                    </div>
+
+
+              </div>
+        <i style="padding-left: 10px; color: gray" class="fas fa-phone"></i>248-123-1234
+            </div>
+          </div>
+      </div>
+    
