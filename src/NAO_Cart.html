@@ -139,8 +139,10 @@
 
     <div class="container">
         <div class="tab">
-            <button id="btnCart" class="tablinks" data-target="tabCart" data-prevtab="" data-nexttab="tabPayment">Review Cart</button>
-            <button id="btnPayment" class="tablinks" data-target="tabPayment" data-prevtab="tabCart" data-nexttab="tabCheckout">Payment information</button>
+            <button id="btnCart" class="tablinks" data-target="tabCart" data-prevtab="" data-nexttab="tabPayment">Review
+                Cart</button>
+            <button id="btnPayment" class="tablinks" data-target="tabPayment" data-prevtab="tabCart" data-nexttab="tabCheckout">Payment
+                information</button>
             <button id="btnCheckout" class="tablinks" data-target="tabCheckout" data-prevtab="tabPayment" data-nexttab="">Checkout</button>
         </div>
 
@@ -180,108 +182,117 @@
                     </td>
                 </tr>
             </table>
-        
+
             <div>
-                <table  style="width:100%">
-                    <tr>
-                        <td style="width:60%">
-                            <table style="width:100%">
-                                <tbody>
-                                    <tr>
-                                        <td style="width:10%">
-                                            <label for="fname"><i class="fa fa-user"></i> Name</label>
-                                        </td>
-                                        <td  style="width:40%">
-                                            <input type="text" id="fname" name="firstname" placeholder="Enter Full Name" class="address">
-                                        </td>
-                                        <td style="width:10%">
-                                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                                        </td>
-                                        <td  style="width:40%">
-                                            <input type="email" id="email" name="email" placeholder="Enter Email Address" class="address">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:10%">
-                                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                                        </td>
-                                        <td style="width:40%">
-                                            <input type="text" id="adr" name="address" placeholder="Enter Address" class="address">
-                                        </td>
-                                        <td style="width:10%">
-                                            <label for="state">State</label>
-                                        </td>
-                                        <td  style="width:40%">
-                                            <input type="text" id="state" name="state" placeholder="Enter State" class="address">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:10%">
-                                            <label for="city"><i class="fa fa-institution"></i> City</label>
-                                        </td>
-                                        <td style="width:40%">
-                                            <input type="text" id="city" name="city" placeholder="Enter City" class="address">
-                                        </td>
-                                        <td style="width:10%">
-                                            <label for="zip">Zip</label>
-                                        </td>
-                                        <td style="width:40%">
-                                            <input type="text" id="zip" name="zip" placeholder="Enter Zip" class="address">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                        <td style="width:40%">
-                            <table style="width:100%">
-                                <tbody>
-                                    <tr>
-                                        <td style="width:50%">
-                                            <label for="fname">Accepted Cards</label>
-                                        </td>
-                                        <td style="width:50%">
-                                            <div class="icon-container">
-                                                <i class="fab fa-cc-visa" style="color:navy;"></i>
-                                                <i class="fab fa-cc-amex" style="color:blue;"></i>
-                                                <i class="fab fa-cc-mastercard" style="color:red;"></i>
-                                                <i class="fab fa-cc-discover" style="color:orange;"></i>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:50%">
-                                            <label for="cname">Name on Card</label>
-                                            <input type="text" id="cname" name="cardname" placeholder="Enter Name">
-                                        </td>
-                                        <td style="width:50%">
-                                            <label for="ccnum">Credit card number</label>
-                                            <input type="text" id="ccnum" name="cardnumber" placeholder="Enter Credit Card Number">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:50%">
-                                            <label for="expmonth">Exp Month</label>
-                                            <input type="text" id="expmonth" name="expmonth" placeholder="Enter Month">
-                                        </td>
-                                        <td style="width:50%">
-                                            <label for="expyear">Exp Year</label>
-                                            <input type="text" id="expyear" name="expyear" placeholder="Enter Year">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:50%">
-                                            <label for="cvv">CVV</label>
-                                            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
-                                        </td>
-                                        <td style="width:50%">
-                                            &nbsp;
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
+                <form id="frmPayment">
+                    <table style="width:100%">
+                        <tr>
+                            <td style="width:60%">
+                                <table style="width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:10%">
+                                                <label for="fname"><i class="fa fa-user"></i> Name</label>
+                                            </td>
+                                            <td style="width:40%">
+                                                <input required type="text" id="fname" name="firstname" placeholder="Enter Full Name"
+                                                    class="address">
+                                            </td>
+                                            <td style="width:10%">
+                                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                            </td>
+                                            <td style="width:40%">
+                                                <input type="email" id="email" name="email" placeholder="Enter Email Address"
+                                                    class="address">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:10%">
+                                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                            </td>
+                                            <td style="width:40%">
+                                                <input required type="text" id="adr" name="address" placeholder="Enter Address"
+                                                    class="address">
+                                            </td>
+                                            <td style="width:10%">
+                                                <label for="state">State</label>
+                                            </td>
+                                            <td style="width:40%">
+                                                <input required type="text" id="state" name="state" placeholder="Enter State"
+                                                    class="address">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:10%">
+                                                <label for="city"><i class="fa fa-institution"></i> City</label>
+                                            </td>
+                                            <td style="width:40%">
+                                                <input required type="text" id="city" name="city" placeholder="Enter City"
+                                                    class="address">
+                                            </td>
+                                            <td style="width:10%">
+                                                <label for="zip">Zip</label>
+                                            </td>
+                                            <td style="width:40%">
+                                                <input required type="text" id="zip" name="zip" placeholder="Enter Zip"
+                                                    class="address">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td style="width:40%">
+                                <table style="width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:50%">
+                                                <label for="fname">Accepted Cards</label>
+                                            </td>
+                                            <td style="width:50%">
+                                                <div class="icon-container">
+                                                    <i class="fab fa-cc-visa" style="color:navy;"></i>
+                                                    <i class="fab fa-cc-amex" style="color:blue;"></i>
+                                                    <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                                                    <i class="fab fa-cc-discover" style="color:orange;"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:50%">
+                                                <label for="cname">Name on Card</label>
+                                                <input required type="text" id="cname" name="cardname" placeholder="Enter Name">
+                                            </td>
+                                            <td style="width:50%">
+                                                <label for="ccnum">Credit card number</label>
+                                                <input required type="text" id="ccnum" name="cardnumber" placeholder="Enter Credit Card Number">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:50%">
+                                                <label for="expmonth">Exp Month</label>
+                                                <input required type="text" id="expmonth" name="expmonth" placeholder="Enter Month">
+                                            </td>
+                                            <td style="width:50%">
+                                                <label for="expyear">Exp Year</label>
+                                                <input required type="text" id="expyear" name="expyear" placeholder="Enter Year">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:50%">
+                                                <label for="cvv">CVV</label>
+                                                <input required type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+                                            </td>
+                                            <td style="width:50%">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
             </div>
         </div>
 
@@ -315,7 +326,7 @@
                 </div>
             </div>
         </div>
-    
+
     </div>
     <br>
     <br>
@@ -385,4 +396,5 @@
         </div>
     </div>
 </footer>
+
 </html>

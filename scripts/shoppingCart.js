@@ -74,12 +74,6 @@ $(document).ready(function () {
         let currentIndex = $(tabId).data("tabindex");
         let target = '#'+$(tabId).data("target");
 
-        $('button.tablinks').css( "border-bottom", "none" );
-        $('button.tablinks').css( "border-bottom-color", "" );
-
-        $(target).css( "border-bottom", "solid" );
-        $(target).css( "border-bottom-color", "red" );
-
         prevTab = $(target).data("prevtab");
         nextTab = $(target).data("nexttab");
 
@@ -91,9 +85,21 @@ $(document).ready(function () {
             $('#next').prop("disabled", false);
         } else if (currentIndex == "2") {
             // nextTab = prevTab;
-            $('#prev').prop("disabled", false);
-            $('#next').prop("disabled", true);
+            if ($("#frmPayment")[0].checkValidity()) {
+                $('#prev').prop("disabled", false);
+                $('#next').prop("disabled", true);
+            } else {
+                showTab("tabPayment");
+                alert("Please enter valid Payment Information");
+                return false;                
+            }
         }
+
+        $('button.tablinks').css( "border-bottom", "none" );
+        $('button.tablinks').css( "border-bottom-color", "" );
+
+        $(target).css( "border-bottom", "solid" );
+        $(target).css( "border-bottom-color", "red" );
 
         $('div.tabcontent').hide();
         $(tabId).show();
