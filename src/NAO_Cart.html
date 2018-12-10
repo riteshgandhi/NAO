@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/NAO.css">
+    <link rel="stylesheet" type="text/css" href="../styles/NAO-Footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/NAO-NavBar.css">
+    <link rel="stylesheet" type="text/css" href="../styles/NAO-Cart.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="../scripts/shoppingCart.js"></script>
+</head>
+
+<body>
+
+    <!-- Top Menu -->
+    <nav class="navbar navbar-expand-md bg-white navbar-light">
+        <table style="width: 100%">
+            <tr>
+                <td rowspan="2" style="width:20%; border-right: solid; border-color: lightgray">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="../index.html">
+                        <img id="logo" alt="Logo" src="../images/logo.jpg" width="180" height="65">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:80%">
+                    <table style="width:100%">
+                        <tr>
+                            <td style="border-bottom: solid; border-color: lightgray">
+                                <table style="float:right">
+                                    <tr>
+                                        <td style="padding-right: 10px">
+                                            <a href="https://www.facebook.com/NationalArabOrchestra/" target="_blank">
+                                                <i style="padding-left: 10px; color: gray" class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </td>
+                                        <td style="padding-right: 10px">
+                                            <a href="https://twitter.com/araborchestra" target="_blank">
+                                                <i style="padding-left: 10px; color: gray" class="fab fa-twitter"></i>
+                                            </a>
+                                        </td>
+                                        <td style="padding-right: 20px; border-right: solid;border-color: lightgray">
+                                            <a href="https://www.youtube.com/channel/UCW0q_FZnJxmNTVoD7inGh4A" target="_blank">
+                                                <i style="padding-left: 10px; color: gray" class="fab fa-youtube"></i>
+                                            </a>
+                                        </td>
+                                        <td style="padding-right: 10px">
+                                            <i style="padding-left: 10px; color: gray" class="fas fa-phone"></i>
+                                            248-123-1234
+                                        </td>
+                                        <td style="padding-right: 10px">
+                                            <i style="padding-left: 10px; color: gray" class="fas fa-envelope"></i>
+                                            info@araborchestra.com
+                                        </td>
+                                        <td style="padding-right: 10px">
+                                            <a href="NAO_Memberships.html">
+                                                <button type="button" class="btn btn-primary">Donate</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table style="float: left">
+                                    <tr>
+                                        <td>
+                                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                                <ul class="navbar-nav">
+                                                    <li class="nav-item active" style="padding-right: 15px; padding-top: 5px">
+                                                        <a class="nav-link" href="NAO_Calendar.html">CONCERTS & TICKETS</a>
+                                                    </li>
+                                                    <li class="nav-item" style="padding-right: 15px; padding-top: 5px">
+                                                        <a class="nav-link" href="NAO_PlanVisit.html">PLAN YOUR VISIT</a>
+                                                    </li>
+                                                    <li class="nav-item" style="padding-right: 15px; padding-top: 5px">
+                                                        <a class="nav-link" href="NAO_Education.html">EDUCATION</a>
+                                                    </li>
+                                                    <li class="nav-item dropdown" style="padding-right: 15px; padding-top: 5px">
+                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                            SUPPORT
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <a class="dropdown-item" href="NAO_Memberships.html">Membership
+                                                                & Donor
+                                                                Resources</a>
+                                                            <a class="dropdown-item" href="#">Volunteer</a>
+                                                            <a class="dropdown-item" href="#">Corporate & Foundation
+                                                                Partners</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="nav-item" style="padding-right: 15px; padding-top: 5px">
+                                                        <a class="nav-link" href="NAO_Aboutus.html">ABOUT US</a>
+                                                    </li>
+                                                    <li>
+                                                        <div>
+                                                            <script>
+                                                                (function () {
+                                                                    var cx = '009306133951131515060:3n44ifw4hyu';
+                                                                    var gcse = document.createElement('script');
+                                                                    gcse.type = 'text/javascript';
+                                                                    gcse.async = true;
+                                                                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                                                    var s = document.getElementsByTagName('script')[0];
+                                                                    s.parentNode.insertBefore(gcse, s);
+                                                                })();
+                                                            </script>
+                                                            <gcse:search></gcse:search>
+                                                        </div>
+                                                        <!-- <button class="btn btn-outline-secondary" type="button" style="border:none">
+                                                                                                                                                                            <i class="fas fa-search"></i>
+                                                                                                                                                                        </button> -->
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                    </table>
+                <td>
+            </tr>
+        </table>
+    </nav>
+
+    <div class="container">
+        <div class="tab">
+            <button id="btnCart" class="tablinks" data-target="tabCart" data-prevtab="" data-nexttab="tabPayment">Review Cart</button>
+            <button id="btnPayment" class="tablinks" data-target="tabPayment" data-prevtab="tabCart" data-nexttab="tabCheckout">Payment information</button>
+            <button id="btnCheckout" class="tablinks" data-target="tabCheckout" data-prevtab="tabPayment" data-nexttab="">Checkout</button>
+        </div>
+
+        <div id="tabCart" class="tabcontent" data-target="btnCart" data-tabindex="0">
+            <table style="width:100%">
+                <tr>
+                    <td style="width:55%">
+                        <h1>Shopping Cart</h1>
+                    </td>
+                    <td style="width: 45%; float: right">
+                        <div>
+                            Need Help? Contact us:<br>
+                            <strong>248.123.1234</strong><br>
+                            <a href="mailto:tickets@araborchestra.org">tickets@araborchestra.org</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div id="cartDiv" class="nao-viewcart scrollTable">
+            </div>
+            <div id="cartTotal" class="nao-viewcart">
+            </div>
+        </div>
+
+        <div id="tabPayment" class="tabcontent" data-target="btnPayment" data-tabindex="1">
+            <table style="width:100%">
+                <tr>
+                    <td style="width:55%">
+                        <h1>Payment Information</h1>
+                    </td>
+                    <td style="width: 45%; float: right">
+                        <div>
+                            Need Help? Contact us:<br>
+                            <strong>248.123.1234</strong><br>
+                            <a href="mailto:tickets@araborchestra.org">tickets@araborchestra.org</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        
+            <div>
+                <table  style="width:100%">
+                    <tr>
+                        <td style="width:60%">
+                            <table style="width:100%">
+                                <tbody>
+                                    <tr>
+                                        <td style="width:10%">
+                                            <label for="fname"><i class="fa fa-user"></i> Name</label>
+                                        </td>
+                                        <td  style="width:40%">
+                                            <input type="text" id="fname" name="firstname" placeholder="Enter Full Name" class="address">
+                                        </td>
+                                        <td style="width:10%">
+                                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                        </td>
+                                        <td  style="width:40%">
+                                            <input type="email" id="email" name="email" placeholder="Enter Email Address" class="address">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:10%">
+                                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                        </td>
+                                        <td style="width:40%">
+                                            <input type="text" id="adr" name="address" placeholder="Enter Address" class="address">
+                                        </td>
+                                        <td style="width:10%">
+                                            <label for="state">State</label>
+                                        </td>
+                                        <td  style="width:40%">
+                                            <input type="text" id="state" name="state" placeholder="Enter State" class="address">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:10%">
+                                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                                        </td>
+                                        <td style="width:40%">
+                                            <input type="text" id="city" name="city" placeholder="Enter City" class="address">
+                                        </td>
+                                        <td style="width:10%">
+                                            <label for="zip">Zip</label>
+                                        </td>
+                                        <td style="width:40%">
+                                            <input type="text" id="zip" name="zip" placeholder="Enter Zip" class="address">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td style="width:40%">
+                            <table style="width:100%">
+                                <tbody>
+                                    <tr>
+                                        <td style="width:50%">
+                                            <label for="fname">Accepted Cards</label>
+                                        </td>
+                                        <td style="width:50%">
+                                            <div class="icon-container">
+                                                <i class="fab fa-cc-visa" style="color:navy;"></i>
+                                                <i class="fab fa-cc-amex" style="color:blue;"></i>
+                                                <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                                                <i class="fab fa-cc-discover" style="color:orange;"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:50%">
+                                            <label for="cname">Name on Card</label>
+                                            <input type="text" id="cname" name="cardname" placeholder="Enter Name">
+                                        </td>
+                                        <td style="width:50%">
+                                            <label for="ccnum">Credit card number</label>
+                                            <input type="text" id="ccnum" name="cardnumber" placeholder="Enter Credit Card Number">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:50%">
+                                            <label for="expmonth">Exp Month</label>
+                                            <input type="text" id="expmonth" name="expmonth" placeholder="Enter Month">
+                                        </td>
+                                        <td style="width:50%">
+                                            <label for="expyear">Exp Year</label>
+                                            <input type="text" id="expyear" name="expyear" placeholder="Enter Year">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:50%">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+                                        </td>
+                                        <td style="width:50%">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="tabCheckout" class="tabcontent" data-target="btnCheckout" data-tabindex="2">
+            <h3>Checkout to place an order</h3>
+            <p id="cartTotalCheckout"></p>
+            <button type="button" id="finalCheckout" class="btn" data-toggle="modal" data-target="#orderConfirmation">Checkout</span></button>
+        </div>
+
+        <div style="float:right">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item" id="prev"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item" id="next"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="modal fade" id="orderConfirmation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel" style="color:black">Order Placed</h4>
+                        <button id="clearCartGoHome" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="color:black">
+                        <h4>Order #1234567890 placed successfully!</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+<!-- footer -->
+<footer>
+    <p></p>
+    <div class="container">
+        <div class="row">
+            <div class="footcolumn">
+                <h5>National Arab Orchestra</h5>
+                <p>123 Mound Road<br />
+                    Warren, MI 48310
+                </p>
+                <a href="https://goo.gl/maps/vuaKJePcA5y" target="_blank">
+                    <button type="button-footer" class="button-footer"> ☆ Google Directions</button>
+                    <br />
+                    <br />
+                    <div class="container">
+                        <a href="https://www.facebook.com/NationalArabOrchestra/" target="_blank" class="fab fa-facebook"></a>
+                        <a href="https://twitter.com/araborchestra" target="_blank" class="fab fa-twitter"></a>
+                        <a href="https://www.instagram.com/araborchestra/" target="_blank" class="fab fa-instagram"></a>
+                    </div>
+            </div>
+
+            <div class="footcolumn" style="border: 1px; border-style:solid; border-color: #FFFFFF; ">
+                <h5>Box Office</h5>
+                <p>313.576.5111 <br />
+                    <br />
+                    Hours: Monday - Friday, 9am - 5pm <br />
+                    Plus 2 hours prior to concerts * <br />
+                    <br />
+                    Dates, times, prices, programs, <br />
+                    and artists are subject to change.
+                </p>
+            </div>
+
+            <div class="footcolumn-x">
+                <div class="container">
+                    <p> Support the NAO with an Annual Fund gift today.</p>
+
+                    &emsp; <h5 style="display: inline-block">NAO xSignup</h5>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <h5 style="display: inline-block">Donate to the NAO</h5>
+
+                    <div class="container">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Your Email">
+                            <div class="input-group-append">
+                                <button class="button-footer" type="button"><i class="far fa-envelope"></i></button>
+                                <div>&nbsp;</div>
+                                <div>&nbsp;</div>
+                                <div>&nbsp;</div>
+                                <input type="text" class="form-control" placeholder="$125.00">
+                                <div class="input-group-append">
+                                    <button class="button-footer" type="button"><i class="fas fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <i style="padding-left: 10px; color: gray" class="fas fa-phone"></i>248-123-1234
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
