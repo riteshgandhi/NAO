@@ -84,15 +84,15 @@ $(document).ready(function () {
             $('#prev').prop("disabled", false);
             $('#next').prop("disabled", false);
         } else if (currentIndex == "2") {
-            // nextTab = prevTab;
-            if ($("#frmPayment")[0].checkValidity()) {
-                $('#prev').prop("disabled", false);
-                $('#next').prop("disabled", true);
-            } else {
-                showTab("tabPayment");
-                alert("Please enter valid Payment Information");
-                return false;                
-            }
+            // // nextTab = prevTab;
+            // if ($("#frmPayment")[0].checkValidity()) {
+            //     $('#prev').prop("disabled", false);
+            //     $('#next').prop("disabled", true);
+            // } else {
+            //     showTab("tabPayment");
+            //     alert("Please enter valid Payment Information");
+            //     return false;                
+            // }
         }
 
         $('button.tablinks').css( "border-bottom", "none" );
