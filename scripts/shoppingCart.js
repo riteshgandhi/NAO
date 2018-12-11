@@ -31,7 +31,7 @@ $(document).ready(function () {
         hashes.forEach(function(item) {
             hash = item.split('=');
             let paramVal = hash[1];
-            let param = {"paramVal":paramVal.replace("%", " ")}; 
+            let param = {"paramVal":paramVal.replace("%20", " ")}; 
             params.push(param);
         });
 
