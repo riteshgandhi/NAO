@@ -31,19 +31,11 @@ $(document).ready(function () {
         hashes.forEach(function(item) {
             hash = item.split('=');
             let paramVal = hash[1];
-            let param = {"paramVal":paramVal}; 
+            let param = {"paramVal":paramVal.replace("%", " ")}; 
             params.push(param);
         });
 
         let eventInfo = {"eventName" : params[0].paramVal, "qty" : params[1].paramVal, "price" : params[2].paramVal};
-
-        // for(var i = 0; i < hashes.length; i++)
-        // {
-        //     hash = hashes[i].split('=');
-        //     vars.push(hash[0]);
-        //     vars[hash[0]] = hash[1];
-        // }
-        // return vars;
         return eventInfo;
     }
 
