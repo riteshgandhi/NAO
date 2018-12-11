@@ -22,6 +22,19 @@ $(document).ready(function () {
         }
     }
 
+    function validatePaymentInfo() {
+        let isValid = true;
+        $('form#frmPayment').find('input').each(function () {
+            if ($(this).prop('required')) {
+                if (!$(this).val()) {
+                    isValid = false;
+                    return;
+                }
+            }
+        });
+        return isValid;    
+    }
+
     function getEventInfo()
     {
         // let vars = [], hash;
@@ -48,18 +61,6 @@ $(document).ready(function () {
         window.location.replace("../index.html");
     };
 
-    // $('button.tablinks').click(function () {
-    //     let target = $(this).data("target");
-    //     prevTab
-    //     currentTab = $(this).data("tabindex");
-    //     showTab(target);
-    //     return false;
-    // });
-
-    // $('li.page-item').click(function () {
-    //     showTab(nextTab);
-    // });
-
     $('#prev').click(function () {
         showTab(prevTab);
     });
@@ -83,15 +84,11 @@ $(document).ready(function () {
             $('#prev').prop("disabled", false);
             $('#next').prop("disabled", false);
         } else if (currentIndex == "2") {
-            // // nextTab = prevTab;
-            // if ($("#frmPayment")[0].checkValidity()) {
-            //     $('#prev').prop("disabled", false);
-            //     $('#next').prop("disabled", true);
-            // } else {
-            //     showTab("tabPayment");
-            //     alert("Please enter valid Payment Information");
-            //     return false;                
-            // }
+            if (!validatePaymentInfo()) {
+                showTab("tabPayment");
+                alert("Please enter valid Payment Information");
+                return false;                
+            }
         }
 
         $('button.tablinks').css( "border-bottom", "none" );
