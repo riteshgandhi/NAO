@@ -13,6 +13,13 @@ $(document).ready(function () {
         if (addToCart(eventInfo.eventName, eventInfo.price, eventInfo.qty)) {
             window.location.replace("../src/NAO_Calendar.html");
         }
+    } else if (document.location.pathname.includes("NAO_Calendar.html")) {
+        if (currentCart.length > 0) {
+            $('div.alert-success').show();
+            $('#successMessage').text("There are items in your cart");
+        } else {
+            $('div.alert-success').hide();
+        }
     }
 
     function getEventInfo()

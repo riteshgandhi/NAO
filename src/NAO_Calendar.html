@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="../scripts/shoppingCart.js"></script>
 </head>
 
 <body>
@@ -138,8 +139,19 @@
                     <h1>Calendar</h1>
                 </td>
                 <td style="float:right;margin-top: 20px">
-                    <a class="nav-link" href="NAO_Cart.html">View Cart</a>                    
+                    <!-- Alerts -->
+                    <div class="container-fluid">
+                        <div class="container">
+                            <div class="alert alert-success alert-dismissible" style="display:none">
+                                There are items in your cart  &nbsp;
+                                <a href="NAO_Cart.html" style="float:right">View Cart</a>
+                            </div>
+                        </div>
+                    </div>
                 </td>
+                <!-- <td style="float:right;margin-top: 20px">
+                    <a class="nav-link" href="NAO_Cart.html">View Cart</a>                    
+                </td> -->
             </tr>
         </table>
         <div data-tockify-component="calendar" data-tockify-calendar="naocalender"></div>
